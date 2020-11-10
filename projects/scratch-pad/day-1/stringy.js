@@ -57,7 +57,14 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+// create array 
+// strings seperated by space
 
+let arr = string.split(" ");
+// string joined with dash
+let joinString = arr.join("-");
+// lowercase
+return joinString.toLowerCase();
 
 
     // YOUR CODE ABOVE HERE //
@@ -160,11 +167,17 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+if(stringOne > stringTwo){
+    return 1;
+} else if(stringOne < stringTwo){
+    return -1;
+} else {return 0;
+}
 
 
 
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 /**
@@ -176,7 +189,12 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+if(stringOne < stringTwo){
+    return 1;
+} else if(stringOne > stringTwo){
+    return -1;
+} else {return 0;
+}
 
 
 
